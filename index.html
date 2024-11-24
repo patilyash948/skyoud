@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyoud Technologies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="hamburger" id="hamburger-menu">
+      &#9776; <!-- Hamburger icon -->
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#career">Career</a>
+      <a href="#signup">Sign Up</a>
+    </div>
+  </header>
+
+ 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed and Maintained by <strong>Skyoud Technologies</strong></p>
+  </footer>
+
+  <script>
+    // Mobile Navbar Toggle
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

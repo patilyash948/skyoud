@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyoud Technologies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="hamburger" id="hamburger-menu">
+      &#9776; <!-- Hamburger icon -->
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#career">Career</a>
+      <a href="#signup">Sign Up</a>
+    </div>
+  </header>
+
+
+
+<!-- About Section -->
+<section id="about-section" class="about">
+    <div class="about-header">
+      <h1>About Skyoud Technologies</h1>
+      <p>Skyoud Technologies is a hub for innovation and technology.</p>
+    </div>
+    <div class="about-cards">
+      <div class="card">
+        <img src="drone.png" alt="Drone Icon">
+        <h3>Drone Development</h3>
+        <p>We build intelligent drone solutions for diverse industries.</p>
+      </div>
+      <div class="card">
+        <img src="machine-vision.png" alt="Machine Vision Icon">
+        <h3>Machine Vision</h3>
+        <p>Our AI-driven solutions revolutionize image processing and analysis.</p>
+      </div>
+      <div class="card">
+        <img src="web-dev.png" alt="Web Development Icon">
+        <h3>Web Development</h3>
+        <p>We craft modern websites to deliver cutting-edge user experiences.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Mobile Navbar Toggle
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed and Maintained by <strong>Skyoud Technologies</strong></p>
+  </footer>
+
+
+</body>
+</html>
